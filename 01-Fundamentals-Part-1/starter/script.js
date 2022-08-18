@@ -27,26 +27,39 @@
 
 // coding challange
 
-let markMass = 78;
-let johnMass = 92;
+// let markMass = 78;
+// let johnMass = 92;
 
-let markHeight = 1.69;
-let johnHeight = 1.95;
+// let markHeight = 1.69;
+// let johnHeight = 1.95;
 
-let markBmi = markMass / (markHeight * markHeight);
-let johnBmi = johnMass / (johnHeight * johnHeight);
-console.log(markBmi, johnBmi);
+// let markBmi = markMass / (markHeight * markHeight);
+// let johnBmi = johnMass / (johnHeight * johnHeight);
+// console.log(markBmi, johnBmi);
 
-const markBmiHigher = markBmi > johnBmi;
-console.log(markBmiHigher);
+// const markBmiHigher = markBmi > johnBmi;
+// console.log(markBmiHigher);
 
-markMass = 95;
-johnMass = 85;
+// markMass = 95;
+// johnMass = 85;
 
-markHeight = 1.69;
-johnHeight = 1.88;
+// markHeight = 1.69;
+// johnHeight = 1.88;
 
-markBmi = markMass / (markHeight * markHeight);
-johnBmi = johnMass / (johnHeight * johnHeight);
-const johnBmiHigher = markBmi < johnBmi;
-console.log(johnBmiHigher);
+// markBmi = markMass / (markHeight * markHeight);
+// johnBmi = johnMass / (johnHeight * johnHeight);
+// const johnBmiHigher = markBmi < johnBmi;
+// console.log(johnBmiHigher);
+
+//string literals
+const namee = "Akhlaq";
+const day = 323;
+const dream = "great coder";
+
+const Akhlaq = "I'm " + namee + " the day is " + day + " Dream " + dream;
+console.log(Akhlaq);
+
+const newAkhlaq = `I am ${namee} the day is ${day} my dream is ${dream}`;
+console.log(newAkhlaq);
+
+console.log();
