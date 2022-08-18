@@ -52,14 +52,57 @@
 // console.log(johnBmiHigher);
 
 //string literals
-const namee = "Akhlaq";
-const day = 323;
-const dream = "great coder";
+// const namee = "Akhlaq";
+// const day = 323;
+// const dream = "great coder";
 
-const Akhlaq = "I'm " + namee + " the day is " + day + " Dream " + dream;
-console.log(Akhlaq);
+// const Akhlaq = "I'm " + namee + " the day is " + day + " Dream " + dream;
+// console.log(Akhlaq);
 
-const newAkhlaq = `I am ${namee} the day is ${day} my dream is ${dream}`;
-console.log(newAkhlaq);
+// const newAkhlaq = `I am ${namee} the day is ${day} my dream is ${dream}`;
+// console.log(newAkhlaq);
 
-console.log();
+// console.log();
+
+//if else
+
+// const age = 5;
+// if (age >= 18) {
+//   console.log("i can drive");
+// } else if (age > 3) {
+//   console.log("hello kid");
+// } else {
+//   console.log("i can'T drive");
+// }
+
+//if else challange
+
+let markMass = 78;
+let johnMass = 92;
+
+let markHeight = 1.69;
+let johnHeight = 1.95;
+
+let markBmi = markMass / (markHeight * markHeight);
+let johnBmi = johnMass / (johnHeight * johnHeight);
+
+if (markBmi > johnBmi) {
+  console.log(`mark has higher bmi ${markBmi}`);
+} else {
+  console.log("jhon has higher bmi");
+}
+
+markMass = 95;
+johnMass = 85;
+
+markHeight = 1.69;
+johnHeight = 1.88;
+
+markBmi = markMass / (markHeight * markHeight);
+johnBmi = johnMass / (johnHeight * johnHeight);
+if (markBmi > johnBmi) {
+  console.log(`mark has higher bmi ${markBmi}`);
+} else {
+  console.log(`jhon has higher bmi ${johnBmi}`);
+}
+
