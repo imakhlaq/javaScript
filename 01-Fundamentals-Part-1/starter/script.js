@@ -153,3 +153,49 @@
 // ) {
 //   console.log("Draw");
 // }
+//switch
+// const day = "fsfsf";
+
+// switch (day) {
+//   case "monday": {
+//     console.log("its moday");
+//     break;
+//   }
+//   case "tuesday": {
+//     console.log("its tuesday");
+//     break;
+//   }
+//   case "wednessday": {
+//     console.log("its wednessday");
+//     break;
+//   }
+//   case "thrusday": {
+//     console.log("its thrusday");
+//     break;
+//   }
+//   case "friday": {
+//     console.log("its friday");
+//     break;
+//   }
+//   case "saturday": {
+//     console.log("its saturday");
+//     break;
+//   }
+//   case "sunday": {
+//     console.log("its sunday");
+//     break;
+//   }
+//   default: {
+//     console.log("world ended");
+//     break;
+//   }
+// }
+//templete literal
+// console.log(`I am ${"akhlaq"} how`);
+
+//ternary operator
+// const age = 22424;
+// const drink = age >= 18 ? "wine" : "water";
+// console.log(drink);
+
+// console.log(`I like to drink ${age >= 18 ? "water" : "juice"}`);
