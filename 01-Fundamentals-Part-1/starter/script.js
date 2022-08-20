@@ -77,32 +77,79 @@
 
 //if else challange
 
-let markMass = 78;
-let johnMass = 92;
+// let markMass = 78;
+// let johnMass = 92;
 
-let markHeight = 1.69;
-let johnHeight = 1.95;
+// let markHeight = 1.69;
+// let johnHeight = 1.95;
 
-let markBmi = markMass / (markHeight * markHeight);
-let johnBmi = johnMass / (johnHeight * johnHeight);
+// let markBmi = markMass / (markHeight * markHeight);
+// let johnBmi = johnMass / (johnHeight * johnHeight);
 
-if (markBmi > johnBmi) {
-  console.log(`mark has higher bmi ${markBmi}`);
-} else {
-  console.log("jhon has higher bmi");
-}
+// if (markBmi > johnBmi) {
+//   console.log(`mark has higher bmi ${markBmi}`);
+// } else {
+//   console.log("jhon has higher bmi");
+// }
 
-markMass = 95;
-johnMass = 85;
+// markMass = 95;
+// johnMass = 85;
 
-markHeight = 1.69;
-johnHeight = 1.88;
+// markHeight = 1.69;
+// johnHeight = 1.88;
 
-markBmi = markMass / (markHeight * markHeight);
-johnBmi = johnMass / (johnHeight * johnHeight);
-if (markBmi > johnBmi) {
-  console.log(`mark has higher bmi ${markBmi}`);
-} else {
-  console.log(`jhon has higher bmi ${johnBmi}`);
-}
+// markBmi = markMass / (markHeight * markHeight);
+// johnBmi = johnMass / (johnHeight * johnHeight);
+// if (markBmi > johnBmi) {
+//   console.log(`mark has higher bmi ${markBmi}`);
+// } else {
+//   console.log(`jhon has higher bmi ${johnBmi}`);
+// }
 
+//type conversion
+// const birthDate = "1234";
+
+// console.log(Number(birthDate)  + 4);
+
+//type coresion
+// const n = "232";
+// console.log(n + 2 - 3 - "23");
+
+//=== vs ==
+
+// ===
+// const n = 18;
+// if ("18" === 18) {
+//   console.log("coresion");
+// } else {
+//   console.log("Not coresion");
+// }
+// ==
+// const n = 18;
+// if ("18" == 18) {
+//   console.log("coresion");
+// } else {
+//   console.log("Not coresion");
+// }
+//taking input
+// const favNumber = prompt("Enter your Fav number: ");
+// console.log(favNumber);
+// console.log(typeof favNumber);
+
+//challenge 3
+
+// const avgeDolphin = (96 + 108 + 89) / 3;
+// const avgeKolas = (88 + 932 + 110) / 3;
+// console.log(avgeDolphin);
+// console.log(avgeKolas);
+
+// if (avgeDolphin > avgeKolas && avgeDolphin >= 100) {
+//   console.log("Dolphine wins");
+// } else if (avgeDolphin < avgeKolas && avgeKolas >= 100) {
+//   console.log("Kolas wins");
+// } else if (
+//   avgeDolphin === avgeKolas ||
+//   (avgeDolphin < 100 && avgeKolas < 100)
+// ) {
+//   console.log("Draw");
+// }
