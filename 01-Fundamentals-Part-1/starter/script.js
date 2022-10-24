@@ -201,9 +201,102 @@
 // console.log(`I like to drink ${age >= 18 ? "water" : "juice"}`);
 
 //coding challenge 4
-const bill = 430;
+// const bill = 430;
 
-const tip = bill >= 50 && bill <= 300 ? (15 / 100) * bill : (20 / 100) * bill;
-console.log(
-  `The bill was ${bill}, the tip was ${tip} and total value ${bill + tip}`
-);
+// const tip = bill >= 50 && bill <= 300 ? (15 / 100) * bill : (20 / 100) * bill;
+// console.log(
+//   `The bill was ${bill}, the tip was ${tip} and total value ${bill + tip}`
+// );
+
+//challenge 4
+
+// const empoly = {
+//   fullName: "Akhlaq",
+//   college: "Shambhunath college Of education",
+//   friends: [1, 2, 3, 4, 5],
+//   profession: "Student",
+//   haveLicence: true,
+
+//   detail: function () {
+//     this.info = `${this.fullName} is ${this.profession} of ${
+//       this.college
+//     } and he has ${this.friends.length} and he ${
+//       this.haveLicence ? "has" : "has no"
+//     } licence`;
+//     return this.info;
+//   },
+// };
+// console.log(empoly.detail());
+
+//challenges 5
+
+// const people = {
+//   fullname: "",
+//   mass: 0,
+//   height: 0,
+
+//   BMICalc: function (fullname, mass, height) {
+//     this.fullname = fullname;
+//     this.mass = mass;
+//     this.height = height;
+//     this.BMI = mass / (height * height);
+//     return this.BMI;
+//   },
+
+//   detail: function (fullname, mass, height) {
+//     this.BMICalc(fullname, mass, height);
+//     this.info = `${fullname} BMI is ${this.BMI} with weight ${this.mass}kg height ${this.height}m`;
+//     return this.info;
+//   },
+// };
+
+// if (
+//   people.BMICalc("Mark Millers", 78, 1.69) >
+//   people.BMICalc("Jhon Smith", 92, 1.95)
+// ) {
+//   console.log("Mark BMI is higher than Jhon");
+//   console.log(people.detail("Mark Millers", 78, 1.69));
+//   console.log(people.detail("Jhon Smith", 92, 1.95));
+// } else {
+//   console.log("john BMI is higher than Mark");
+//   console.log(people.detail("Jhon Smith", 92, 1.95));
+//   console.log(people.detail("Mark Millers", 78, 1.69));
+// }
+
+//challenge 4
+
+const cal = {
+  tipCal: function (bill) {
+    if (bill >= 50 && bill <= 300) {
+      return (15 / 100) * bill;
+    } else if (bill > 300) {
+      return (20 / 100) * bill;
+    }
+    return 0;
+  },
+  avg: function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      sum += arr[i];
+    }
+    const avrage = sum / arr.length;
+    return avrage;
+  },
+};
+
+const bill = [22, 295, 176, 440, 37, 105, 10, 100, 86, 52];
+
+const tip = [];
+
+const total = [];
+
+for (let i = 0; i < bill.length; i++) {
+  tip.push(cal.tipCal(bill[i]));
+  total.push(bill[i] + tip[i]);
+}
+console.log(bill);
+console.log(`Bill Avg is ${cal.avg(bill)}`);
+console.log(tip);
+console.log(`Tip Avg is ${cal.avg(tip)}`);
+console.log(total);
+console.log(`Total Avg is ${cal.avg(total)}`);

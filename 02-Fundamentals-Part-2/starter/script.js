@@ -53,22 +53,42 @@
 
 //coding challenge arrays
 
-const tipCal = function (amount) {
-  let tip = 0;
-  if (amount >= 50 && amount <= 300) {
-    tip = (15 / amount) * 100;
-  } else {
-    tip = (20 / amount) * 100;
-  }
-  return tip;
+// const tipCal = function (amount) {
+//   let tip = 0;
+//   if (amount >= 50 && amount <= 300) {
+//     tip = (15 / amount) * 100;
+//   } else {
+//     tip = (20 / amount) * 100;
+//   }
+//   return tip;
+// };
+
+// const bills = [125, 555, 44];
+// const tipValue = [tipCal(bills[0]), tipCal(bills[1]), tipCal(bills[2])];
+// const total = [
+//   bills[0] + tipValue[0],
+//   bills[1] + tipValue[1],
+//   bills[2] + tipValue[2],
+// ];
+
+// console.log(total);
+
+//objects
+
+const human = {
+  hisName: null,
+  friends: [],
 };
 
-const bills = [125, 555, 44];
-const tipValue = [tipCal(bills[0]), tipCal(bills[1]), tipCal(bills[2])];
-const total = [
-  bills[0] + tipValue[0],
-  bills[1] + tipValue[1],
-  bills[2] + tipValue[2],
-];
+const fullName = prompt("name");
+human.hisName = fullName;
 
-console.log(total);
+const hisFriend = prompt("Friend");
+human.friends[0] = hisFriend;
+
+const his2Friend = prompt("Friend");
+human.friends[1] = his2Friend;
+
+console.log(
+  `${human.hisName} has ${human.friends.length} friends, and his best friend is called ${human.friends[0]}`
+);
