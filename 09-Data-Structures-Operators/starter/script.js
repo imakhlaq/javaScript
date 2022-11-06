@@ -27,3 +27,80 @@ const restaurant = {
     },
   },
 };
+
+//player array
+// const player1 = [
+//   'Bob Donaldson',
+//   'ren Scotland',
+//   'Fred Erentz',
+//   'Joe Cassidy',
+//   '	Edwin van der Sar',
+//   '	Gary Neville',
+//   '	Patrice Evra',
+//   '	Eric Bailly',
+//   '	Victor Lindelöf',
+//   '	David De Gea',
+//   'Lisandro Martinez',
+// ];
+// const player2 = [
+//   'Bob Donaldsonx2',
+//   'ren Scotland2',
+//   'Fred Erentz2',
+//   'Joe Cassidy2',
+//   '	Edwin van der Sar2',
+//   '	Gary Neville2',
+//   '	Patrice Evra2',
+//   '	Eric Bailly2',
+//   '	Victor Lindelöf2',
+//   '	David De Gea2',
+//   'Lisandro Martinez2',
+// ];
+
+// const [gk1, ...BMfeildplayer] = player1;
+
+// const allplayer = [...player1, ...player2];
+
+// const BMall = [...player1, 'thiago', 'countino', 'perisic'];
+
+const game = {
+  team_1: 'Bob Donaldson',
+  team_2: 'Bob Donaldsonx2',
+  players: [
+    [
+      'ren Scotland',
+      'Fred Erentz',
+      'Joe Cassidy',
+      '	Edwin van der Sar',
+      '	Gary Neville',
+      '	Patrice Evra',
+      '	Eric Bailly',
+      '	Victor Lindelöf',
+      '	David De Gea',
+      'Lisandro Martinez',
+    ],
+    [
+      'Bob Donaldsonx2',
+      'ren Scotland2',
+      'Fred Erentz2',
+      'Joe Cassidy2',
+      '	Edwin van der Sar2',
+      '	Gary Neville2',
+      '	Patrice Evra2',
+      '	Eric Bailly2',
+      '	Victor Lindelöf2',
+      '	David De Gea2',
+      'Lisandro Martinez2',
+    ],
+  ],
+  const: ([team10, team20] = game.players),
+
+  score: 4,
+  ScoreByPlayer: [
+    'Fred Erentz2',
+    'Gary Neville',
+    '	Edwin van der Sar2',
+    '	Eric Bailly',
+  ],
+};
+
+console.log(team10);
