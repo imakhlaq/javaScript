@@ -174,16 +174,28 @@ const flights =
 //   🔴 Delayed Arrival from HEL to FAO (12h05)
 //            Departure from FAO to LIS (12h30)
 
-for (const flight of flights.split('+')) {
-  const each = flight.split(';');
-  const [type, from, to, time] = each;
+// for (const flight of flights.split('+')) {
+//   const each = flight.split(';');
+//   const [type, from, to, time] = each;
 
-  const output = `${type.includes('Delayed') ? '🔴' : ''} ${type.replaceAll(
-    '_',
-    ' '
-  )} ${from.slice(0, 3).toUpperCase()} ${to
-    .slice(0, 3)
-    .toUpperCase()} (${time.replace(':', 'h')})`.padStart(37);
+//   const output = `${type.includes('Delayed') ? '🔴' : ''} ${type.replaceAll(
+//     '_',
+//     ' '
+//   )} ${from.slice(0, 3).toUpperCase()} ${to
+//     .slice(0, 3)
+//     .toUpperCase()} (${time.replace(':', 'h')})`.padStart(37);
 
-  console.log(output);
-}
+//   console.log(output);
+// }
+
+// challenge
+
+// const fun = function (rate) {
+//   return function (value) {
+//     return value + value * rate;
+//   };
+// };
+
+// const newfun = fun.bind(null, 0.23);
+
+// console.log(newfun()(200));
