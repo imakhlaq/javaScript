@@ -50,13 +50,20 @@ const poll = {
     if (!isNaN(yourchoice) && yourchoice >= 0 && yourchoice <= 3) {
       this.answers[yourchoice] += 1;
     }
-    this.displayResults(this.answers);
+    this.displayResults();
+    this.displayResults('string');
   },
-  displayResults(type) {
-    console.log(type);
+  displayResults(type = 'array') {
+    if (type === 'array') {
+      console.log(this.answers);
+    } else if (type === 'string') {
+      console.log(`Poll results are ${this.answers.join(', ')}`);
+    }
   },
 };
 
 const pollbtn = document.querySelector('.poll');
 
 pollbtn.addEventListener('click', poll.registerNewAnswer.bind(poll));
+
+poll.displayResults.call({ answers: [5, 2, 3] });
